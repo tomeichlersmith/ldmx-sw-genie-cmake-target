@@ -1,0 +1,66 @@
+# Option 1
+# don't use any targets at all
+# just have linker search its cache for these libraries
+find_package(ROOT CONFIG REQUIRED)
+set(GENIE_LIBRARIES
+  log4cpp
+  gsl
+  GRwFwk
+  GRwClc
+  GRwIO
+  GFwInt
+  GFwNum
+  GFwUtl
+  GFwParDat
+  GFwEG
+  GFwAlg
+  GFwGHEP
+  GFwMsg
+  xml2
+  GFwReg
+  ROOT::EG
+  ROOT::EGPythia8
+  pythia8
+  GFwNtp
+  GPhXSIg
+  GPhPDF
+  GPhNuclSt
+  GPhCmn
+  GPhDcy
+  GPhHadTransp
+  GPhHadnz
+  GPhHadTens
+  GPhDeEx
+  GPhAMNGXS
+  GPhAMNGEG
+  GPhChmXS
+  GPhCohXS
+  GPhCohEG
+  GPhDISXS
+  GPhDISEG
+  GPhDfrcXS
+  GPhDfrcEG
+  GPhHELptnXS
+  GPhHELptnEG
+  GPhIBDXS
+  GPhIBDEG
+  GPhMNucXS
+  GPhMNucEG
+  GPhMEL
+  GPhNuElXS
+  GPhNuElEG
+  GPhQELXS
+  GPhQELEG
+  GPhResXS
+  GPhResEG
+  GPhStrXS
+  GPhStrEG
+  LHAPDF
+  GPhHEDISXS
+  GPhHEDISEG
+  ROOT::Geom
+  GTlGeo
+  GTlFlx
+  ROOT::MathCore
+  ROOT::MathMore)
+message(STATUS "Found GENIE with Option 1")
