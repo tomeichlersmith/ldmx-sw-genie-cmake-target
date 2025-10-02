@@ -5,8 +5,13 @@ necessary include and link directories for within ldmx-sw.
 Building ldmx-sw takes a long time though, so this is a testing ground.
 
 - clone this repository in the same directory as ldmx-sw so we are in the same `denv`
+- test differnet cmake configuration options (`OptionN.cmake`): `just test N`
 
+## Terminal Recordings
+I do terminal recordings with `script` and `ansi2html`.
 ```
-denv cmake -B build -S .
-denv cmake --build build
+script output.log
+# run commands
+exit
+ansi2html <output.log >output.html
 ```
