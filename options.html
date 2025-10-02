@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body {background-color: black;}
+pre {
+	font-weight: normal;
+	color: #bbb;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+b {font-weight: normal}
+b.BOLD {color: #fff}
+b.ITA {font-style: italic}
+b.UND {text-decoration: underline}
+b.STR {text-decoration: line-through}
+b.UNDSTR {text-decoration: underline line-through}
+b.BLK {color: #000000}
+b.RED {color: #aa0000}
+b.GRN {color: #00aa00}
+b.YEL {color: #aa5500}
+b.BLU {color: #0000aa}
+b.MAG {color: #aa00aa}
+b.CYN {color: #00aaaa}
+b.WHI {color: #aaaaaa}
+b.HIK {color: #555555}
+b.HIR {color: #ff5555}
+b.HIG {color: #55ff55}
+b.HIY {color: #ffff55}
+b.HIB {color: #5555ff}
+b.HIM {color: #ff55ff}
+b.HIC {color: #55ffff}
+b.HIW {color: #ffffff}
+b.BBLK {background-color: #000000}
+b.BRED {background-color: #aa0000}
+b.BGRN {background-color: #00aa00}
+b.BYEL {background-color: #aa5500}
+b.BBLU {background-color: #0000aa}
+b.BMAG {background-color: #aa00aa}
+b.BCYN {background-color: #00aaaa}
+b.BWHI {background-color: #aaaaaa}
+</style>
+</head>
+<body>
+<pre>Script started on 2025-10-02 15:15:23-05:00 [TERM="screen-256color" TTY="/dev/pts/2" COLUMNS="238" LINES="34"]
+<b class=HIG>tom@appa</b>:<b class=HIB>~/code/ldmx/ldmx-sw/genie</b>$ just test 0
+&crarr;
+<b class="BOLD">denv cmake -B build/0 -S . -DFIND_GENIE_OPTION=0</b>
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GENIE with Option 0
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/tom/code/ldmx/ldmx-sw/genie/build/0
+<b class="BOLD">denv cmake --build build/0</b>
+[ 50%] <b class=GRN>Building CXX object CMakeFiles/main.dir/main.cxx.o</b>
+[100%] <b class=GRN></b><b class=HIG>Linking CXX executable main</b>
+/usr/bin/ld: /usr/local/lib/libGFwNum.so: undefined reference to `typeinfo for ROOT::Math::Interpolator'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `TNtupleD::TNtupleD(char const*, char const*, char const*, int)'
+/usr/bin/ld: /usr/local/lib/libGFwNum.so: undefined reference to `TTree::GetPlayer()'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `TNtupleD::Class()'
+/usr/bin/ld: /usr/local/lib/libGFwNum.so: undefined reference to `ROOT::Math::Interpolator::Eval(double) const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `TTree::SetDirectory(TDirectory*)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `TChain::TChain(char const*, char const*, TChain::Mode)'
+/usr/bin/ld: /usr/local/lib/libGFwNum.so: undefined reference to `ROOT::Math::Interpolator::Interpolator(std::vector&lt;double, std::allocator&lt;double&gt; &gt; const&amp;, std::vector&lt;double, std::allocator&lt;double&gt; &gt; const&amp;, ROOT::Math::Interpolation::Type)'
+/usr/bin/ld: /usr/local/lib/libGFwNum.so: undefined reference to `TNtupleD::~TNtupleD()'
+/usr/bin/ld: /usr/local/lib/libGFwNum.so: undefined reference to `TTree::ReadFile(char const*, char const*, char)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/main.dir/build.make:163: main] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/main.dir/all] Error 2
+gmake: *** [Makefile:91: all] Error 2
+<b class=HIR>error</b>: <b class="BOLD">Recipe `test` failed on line 4 with exit code 2</b>
+<b class=HIG>tom@appa</b>:<b class=HIB>~/code/ldmx/ldmx-sw/genie</b>$ just test 1
+&crarr;
+<b class="BOLD">denv cmake -B build/1 -S . -DFIND_GENIE_OPTION=1</b>
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GENIE with Option 1
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/tom/code/ldmx/ldmx-sw/genie/build/1
+<b class="BOLD">denv cmake --build build/1</b>
+[ 50%] <b class=GRN>Building CXX object CMakeFiles/main.dir/main.cxx.o</b>
+[100%] <b class=GRN></b><b class=HIG>Linking CXX executable main</b>
+/usr/bin/ld: /usr/local/lib/libGFwMsg.so: undefined reference to `log4cpp::BasicLayout::BasicLayout()'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `log4cpp::Appender::AppenderMapStorageInitializer::~AppenderMapStorageInitializer()'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::KPhaseSpace::Q2Lim_W() const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::InitialState::SetProbeP4(TLorentzVector const&amp;)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `TNtupleD::Class()'
+/usr/bin/ld: /usr/local/lib/libGFwMsg.so: undefined reference to `log4cpp::Category::getInstance(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::RandomGen::Instance()'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::KPhaseSpace::Limits(genie::EKineVar) const'
+/usr/bin/ld: /usr/local/lib/libGFwMsg.so: undefined reference to `log4cpp::OstreamAppender::OstreamAppender(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::ostream*)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::KPhaseSpace::Threshold() const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Spline::Spline(int, double*, double*)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Kinematics::Q2(bool) const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Kinematics::SetQ2(double, bool)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Interaction::FSPrimLepton() const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Kinematics::Setx(double, bool)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Spline::Class()'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Spline::Evaluate(double) const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `log4cpp::CategoryStream::operator&lt;&lt;(char const*)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::InitialState::Probe() const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Spline::SaveAsXml(std::basic_ofstream&lt;char, std::char_traits&lt;char&gt; &gt;&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;) const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `log4cpp::Appender::AppenderMapStorageInitializer::AppenderMapStorageInitializer()'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Target::HitNucP4Ptr() const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Spline::SetType(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Interaction::Interaction(genie::Interaction const&amp;)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `TTree::SetDirectory(TDirectory*)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `TChain::TChain(char const*, char const*, TChain::Mode)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `log4cpp::CategoryStream::~CategoryStream()'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Kinematics::x(bool) const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::InitialState::ProbeE(genie::ERefFrame) const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Kinematics::W(bool) const'
+/usr/bin/ld: /usr/local/lib/libGFwMsg.so: undefined reference to `log4cpp::Category::getRoot()'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Kinematics::KVSet(genie::EKineVar) const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Kinematics::Sety(double, bool)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Interaction::~Interaction()'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::operator&lt;&lt;(std::ostream&amp;, genie::Interaction const&amp;)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::ProcessInfo::IsCoherentProduction() const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Kinematics::SetW(double, bool)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Kinematics::y(bool) const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::RandomGen::SetSeed(long)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Kinematics::GetKV(genie::EKineVar) const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::exceptions::InteractionException::InteractionException(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Interaction::RecoilNucleonPdg() const'
+/usr/bin/ld: /usr/local/lib/libGFwMsg.so: undefined reference to `log4cpp::SimpleLayout::SimpleLayout()'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::ProcessInfo::IsQuasiElastic() const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::utils::math::IsWithinLimits(double, genie::Range1D_t)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Target::Mass() const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Interaction::AsString[abi:cxx11]() const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `TNtupleD::TNtupleD(char const*, char const*, char const*, int)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/main.dir/build.make:113: main] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/main.dir/all] Error 2
+gmake: *** [Makefile:91: all] Error 2
+<b class=HIR>error</b>: <b class="BOLD">Recipe `test` failed on line 4 with exit code 2</b>
+<b class=HIG>tom@appa</b>:<b class=HIB>~/code/ldmx/ldmx-sw/genie</b>$ just test 2
+&crarr;
+<b class="BOLD">denv cmake -B build/2 -S . -DFIND_GENIE_OPTION=2</b>
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+log4cppgslGENIE::GRwFwkGENIE::GRwIOGENIE::GRwClcxml2GENIE::GFwMsgGENIE::GFwRegGENIE::GFwAlgGENIE::GFwIntGENIE::GFwGHEPGENIE::GFwNumGENIE::GFwUtlGENIE::GFwParDatGENIE::GFwEGROOT::EGROOT::EGPythia8pythia8GENIE::GFwNtpGENIE::GPhCmnGENIE::GPhDcyGENIE::GPhHadTensGENIE::GPhMELGENIE::GPhPDFGENIE::GPhXSIgGENIE::GPhNuclStGENIE::GPhDeExGENIE::GPhHadnzGENIE::GPhHadTranspGENIE::GPhAMNGXSGENIE::GPhAMNGEGGENIE::GPhChmXSGENIE::GPhCohXSGENIE::GPhCohEGGENIE::GPhDISXSGENIE::GPhDISEGGENIE::GPhDfrcXSGENIE::GPhDfrcEGGENIE::GPhHELptnXSGENIE::GPhHELptnEGGENIE::GPhIBDXSGENIE::GPhIBDEGGENIE::GPhMNucXSGENIE::GPhMNucEGGENIE::GPhNuElXSGENIE::GPhNuElEGGENIE::GPhQELXSGENIE::GPhQELEGGENIE::GPhResXSGENIE::GPhResEGGENIE::GPhStrXSGENIE::GPhStrEGLHAPDFGENIE::GPhHEDISXSGENIE::GPhHEDISEGROOT::GeomGENIE::GTlFlxGENIE::GTlGeoROOT::MathCoreROOT::MathMore
+-- Found GENIE with Option 2
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/tom/code/ldmx/ldmx-sw/genie/build/2
+<b class="BOLD">denv cmake --build build/2</b>
+[ 50%] <b class=GRN>Building CXX object CMakeFiles/main.dir/main.cxx.o</b>
+[100%] <b class=GRN></b><b class=HIG>Linking CXX executable main</b>
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `log4cpp::Appender::AppenderMapStorageInitializer::~AppenderMapStorageInitializer()'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::KPhaseSpace::Q2Lim_W() const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::InitialState::SetProbeP4(TLorentzVector const&amp;)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `xmlFreeTextReader'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `TNtupleD::Class()'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::operator&lt;&lt;(std::ostream&amp;, genie::Algorithm const&amp;)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::RandomGen::Instance()'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::KPhaseSpace::Limits(genie::EKineVar) const'
+/usr/bin/ld: /usr/local/lib/libGFwParDat.so: undefined reference to `genie::AlgConfigPool::Instance()'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::KPhaseSpace::Threshold() const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Registry::Exists(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;) const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `xmlFree'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Spline::Spline(int, double*, double*)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Kinematics::Q2(bool) const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Kinematics::SetQ2(double, bool)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Interaction::FSPrimLepton() const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `xmlNewTextReaderFilename'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Kinematics::Setx(double, bool)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Spline::Class()'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Spline::Evaluate(double) const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `xmlTextReaderNodeType'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `log4cpp::CategoryStream::operator&lt;&lt;(char const*)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `xmlTextReaderGetAttribute'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::InitialState::Probe() const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Spline::SaveAsXml(std::basic_ofstream&lt;char, std::char_traits&lt;char&gt; &gt;&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;) const'
+/usr/bin/ld: /usr/local/lib/libGFwParDat.so: undefined reference to `genie::Registry::GetString(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;) const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `log4cpp::Appender::AppenderMapStorageInitializer::AppenderMapStorageInitializer()'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `xmlNodeListGetString'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `xmlTextReaderDepth'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Target::HitNucP4Ptr() const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Messenger::Instance()'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Spline::SetType(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Interaction::Interaction(genie::Interaction const&amp;)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `xmlTextReaderRead'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::gAbortingInErr'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `TTree::SetDirectory(TDirectory*)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `xmlTextReaderValue'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `TChain::TChain(char const*, char const*, TChain::Mode)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Registry::GetDoubleDef(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, double, bool)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `log4cpp::CategoryStream::~CategoryStream()'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `xmlTextReaderName'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Messenger::operator()(char const*)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Kinematics::x(bool) const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::InitialState::ProbeE(genie::ERefFrame) const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Kinematics::W(bool) const'
+/usr/bin/ld: /usr/local/lib/libGFwParDat.so: undefined reference to `genie::Registry::GetDouble(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;) const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Kinematics::KVSet(genie::EKineVar) const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Kinematics::Sety(double, bool)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Messenger::SetPrioritiesFromXmlFile(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Interaction::~Interaction()'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `xmlGetProp'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::operator&lt;&lt;(std::ostream&amp;, genie::Interaction const&amp;)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::ProcessInfo::IsCoherentProduction() const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Kinematics::SetW(double, bool)'
+/usr/bin/ld: /usr/local/lib/libGFwParDat.so: undefined reference to `genie::AlgConfigPool::CommonList(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;) const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Kinematics::y(bool) const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::RandomGen::SetSeed(long)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Kinematics::GetKV(genie::EKineVar) const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::exceptions::InteractionException::InteractionException(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `xmlStrcmp'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Interaction::RecoilNucleonPdg() const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::ProcessInfo::IsQuasiElastic() const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::utils::math::IsWithinLimits(double, genie::Range1D_t)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Target::Mass() const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `genie::Interaction::AsString[abi:cxx11]() const'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `TNtupleD::TNtupleD(char const*, char const*, char const*, int)'
+/usr/bin/ld: /usr/local/lib/libGFwUtl.so: undefined reference to `xmlDocGetRootElement'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/main.dir/build.make:163: main] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/main.dir/all] Error 2
+gmake: *** [Makefile:91: all] Error 2
+<b class=HIR>error</b>: <b class="BOLD">Recipe `test` failed on line 4 with exit code 2</b>
+<b class=HIG>tom@appa</b>:<b class=HIB>~/code/ldmx/ldmx-sw/genie</b>$ exit
+&crarr;
+exit
+
+Script done on 2025-10-02 15:15:42-05:00 [COMMAND_EXIT_CODE="2"]
+</pre>
+</body>
+</html>
